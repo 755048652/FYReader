@@ -15,7 +15,7 @@ jobs:
         uses: actions/checkout@v2
         with:
           repository: fengyuecanzhu/Key
-          token: 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  # 连接仓库的token,需要单独配置
+          token: ${{ secrets.KEY_TOKEN }}  # 连接仓库的token,需要单独配置
           path: keystore # 仓库的根目录名
       # 读取配置
       - name: Prepare Config
